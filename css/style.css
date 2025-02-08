@@ -1,0 +1,55 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+/* Base Styles */
+
+/* Navbar */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #353848;
+    padding: 30px 10%;
+}
+
+li, a, button {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #dddedf;
+    text-decoration: none;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav li a:hover {
+    color: #88a7c6;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(57, 166, 220, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(57, 166, 220, 0.8);
+}
+
+/* Image Slider */
