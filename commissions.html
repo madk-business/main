@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Commission Survey</title>
+    <link rel="icon" href="assets/images/favicon.png">
+    <meta name="author" content="Daniel Chen">
+    <meta name="description" content="commissions forms">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/commissions.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Commission Set Survey</h1>
+
+    <form action="https://formsubmit.co/madk.business.official@gmail.com" method="post">
+        <div>
+            <label for="fname">first name: </label>
+            <input type="text" id="fname" name="fname" placeholder="John" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="lname">last name: </label>
+            <input type="text" id="lname" name="lname" placeholder="Doe" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">email: </label>
+            <input type="email" id="email" name="email" placeholder="yourname@example.com" required>
+        </div>
+        
+        <br>
+
+        <div>
+            <label for="description">description of commission: </label><br>
+            <textarea id="description" name="description" rows="4" cols="50" placeholder="eg: a potted plant in a snowy tundra" required></textarea>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="quantity">quantity: </label>
+            <input type="number" id="quantity" name="quantity" min="1" max="8" value="1" required>
+        </div>
+
+        <br>
+        
+        <div>
+            <p>base price: </p>
+            <p id="base_price"></p>
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset">
+        </div>
+    </form>
+
+    <script src="js/commissions.js"></script>
+</body>
+
+</html>
