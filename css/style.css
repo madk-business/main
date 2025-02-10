@@ -3,6 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 /* Base Styles */
+body {
+    background-color: #F8E1F4;
+}
+
+h2 {
+    color: #3D3B40;
+}
+
+p {
+    color: #4A4A4A;
+}
 
 /* Navbar */
 
@@ -10,15 +21,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #353848;
-    padding: 30px 10%;
+    background-color: #1F1B24;
+    padding: 20px 10%;
 }
 
-li, a, button {
+.nav_item, a, button {
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #dddedf;
+    color: #EAEAEA;
     text-decoration: none;
 }
 
@@ -26,22 +37,22 @@ li, a, button {
     list-style: none;
 }
 
-.nav li {
+.nav .nav_item {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.nav li a {
+.nav .nav_item a {
     transition: all 0.3s ease 0s;
 }
 
-.nav li a:hover {
-    color: #88a7c6;
+.nav .nav_item a:hover {
+    color: #FF80BF;
 }
 
 button {
     padding: 9px 25px;
-    background-color: rgba(57, 166, 220, 1);
+    background-color: rgba(255, 128, 191, 1);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -49,7 +60,110 @@ button {
 }
 
 button:hover {
-    background-color: rgba(57, 166, 220, 0.8);
+    background-color: rgba(255, 84, 148, 0.8);
 }
 
-/* Image Slider */
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+    height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #F8E1F4;
+    border-radius: 10px;
+    margin-block: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #D63384, #B11162);
+    border-radius: 10px;
+    border: 2px solid #2c2f3f;
+    transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #FF80BF, #DA5884);
+    transform: scale(1.1);
+}
+
+::-webkit-scrollbar-corner {
+    background: #F4CCE2;
+}
+
+/* Home Page */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4CCE2;
+    min-height: 60vh;
+    text-align: center;
+    padding: 50px 10%;
+    margin-top: 10px;
+}
+
+.home .home_item {
+    display: block;
+    margin: 10px 0;
+}
+
+
+/* About Us */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4CCE2;
+    min-height: 60vh;
+    text-align: center;
+    padding: 50px 10%;
+    margin-top: 10px;
+}
+
+/* Commissions Page */
+
+.commissions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4CCE2;
+    min-height: 60vh;
+    text-align: center;
+    padding: 50px 10%;
+    margin-top: 10px;
+}
+
+/* Gallery */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4CCE2;
+    min-height: 60vh;
+    padding: 50px 10%;
+    margin-top: 10px;
+}
+
+/* Contact Us */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4CCE2;
+    min-height: 60vh;
+    text-align: center;
+    padding: 50px 10%;
+    margin-top: 10px;
+}
