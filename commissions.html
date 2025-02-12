@@ -16,35 +16,35 @@
     <h1>Commission Set Survey</h1>
 
     <form action="https://usebasin.com/f/ef0c2428aaab" method="post">
-        <div>
+        <div class="fname">
             <label for="fname">first name: </label>
             <input type="text" id="fname" name="fname" placeholder="John" required>
         </div>
 
         <br>
 
-        <div>
+        <div class="lname">
             <label for="lname">last name: </label>
             <input type="text" id="lname" name="lname" placeholder="Doe" required>
         </div>
 
         <br>
 
-        <div>
+        <div class="email">
             <label for="email">email: </label>
             <input type="email" id="email" name="email" placeholder="yourname@example.com" required>
         </div>
         
         <br>
 
-        <div>
+        <div class="description">
             <label for="description">description of commission: </label><br>
             <textarea id="description" name="description" rows="4" cols="50" placeholder="eg: a potted plant in a snowy tundra" required></textarea>
         </div>
 
         <br>
 
-        <div>
+        <div class="quantity">
             <label for="quantity">quantity: </label>
             <input type="number" id="quantity" name="quantity" min="1" max="8" value="1" onchange="updatePrice()" required>
         </div>

@@ -1,18 +1,22 @@
 /* Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 /* Base Styles */
 body {
     background-color: #F8E1F4;
 }
 
-h2 {
+h2, h4 {
     color: #3D3B40;
+    font-family: "Poppins", sans-serif;
 }
 
 p {
     color: #4A4A4A;
+    font-family: "Nunito", sans-serif;
 }
 
 /* Navbar */
@@ -64,6 +68,7 @@ button:hover {
 }
 
 /* Scrollbar */
+
 ::-webkit-scrollbar {
     width: 20px;
     height: 12px;
@@ -80,13 +85,14 @@ button:hover {
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(135deg, #D63384, #B11162);
     border-radius: 10px;
-    border: 2px solid #2c2f3f;
+    border: 5px solid #2c2f3f;
     transition: all 0.3s ease-in-out;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(135deg, #FF80BF, #DA5884);
     transform: scale(1.1);
+    border: 5px solid #595057;
 }
 
 ::-webkit-scrollbar-corner {
