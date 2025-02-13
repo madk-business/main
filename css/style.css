@@ -1,5 +1,4 @@
 /* Fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
@@ -11,9 +10,9 @@ html {
 
 body {
     background-color: #F8E1F4;
-    margin-top: 80px;
 }
 
+/* Typography */
 h2, h4 {
     color: #3D3B40;
     font-family: "Poppins", sans-serif;
@@ -25,40 +24,52 @@ p {
 }
 
 /* Navbar */
-
 header {
     position: fixed;
     top: 10px;
     left: 10px;
     right: 10px;
-    width: auto; /* Adjust width to keep space */
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1F1B24;
     padding: 20px 10%;
     transition: all 0.3s ease-in-out;
-    border-radius: 10px; /* Optional rounded edges */
+    border-radius: 10px;
+    z-index: 1000;
 }
 
 header.scrolled {
     top: 0;
     left: 0;
     right: 0;
-    width: auto;
     padding: 10px 5%;
-    background-color: rgba(31, 27, 36, 0.8); /* Transparent effect */
+    background-color: rgba(31, 27, 36, 0.8);
     backdrop-filter: blur(10px);
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-radius: 0;
 }
 
-.nav_item, a, button {
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-family: "Kanit", sans-serif;
+    color: #EAEAEA;
+}
+
+/* Navigation */
+li, a, button {
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #EAEAEA;
     text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
 }
 
 .nav {
@@ -78,6 +89,7 @@ header.scrolled {
     color: #FF80BF;
 }
 
+/* Shop Button */
 button {
     padding: 9px 25px;
     background-color: rgba(255, 128, 191, 1);
@@ -85,18 +97,103 @@ button {
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    font-family: "Kanit", sans-serif;
 }
 
 button:hover {
     background-color: rgba(255, 84, 148, 0.8);
 }
 
+/* Mobile Navbar */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #EAEAEA;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    /* Resize logo and button */
+    .logo {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px 30px;
+    }
+
+    /* Hide desktop nav, show mobile menu */
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1F1B24;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Responsive Sections */
+.home, .about, .commissions, .gallery, .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4CCE2;
+    min-height: 60vh;
+    text-align: center;
+    padding: 50px 10%;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .home, .about, .commissions, .gallery, .contact {
+        padding: 30px 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home, .about, .commissions, .gallery, .contact {
+        padding: 20px 5%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
 
 /* Scrollbar */
-
 ::-webkit-scrollbar {
-    width: 20px;
-    height: 12px;
+    width: 20px; /* Adjust for different screen sizes */
+}
+
+@media (max-width: 768px) {
+    ::-webkit-scrollbar {
+        width: 8px; /* Thinner scrollbar on mobile */
+    }
 }
 
 /* Track */
@@ -105,8 +202,10 @@ button:hover {
     border-radius: 10px;
     margin-block: 5px;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    background: hsl(193 8% 90%);
 }
 
+/* Thumb */
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(135deg, #D63384, #B11162);
     border-radius: 10px;
@@ -120,81 +219,14 @@ button:hover {
     border: 5px solid #595057;
 }
 
+/* Scrollbar corner */
 ::-webkit-scrollbar-corner {
     background: #F4CCE2;
 }
 
-/* Home Page */
-
-.home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #F4CCE2;
-    min-height: 60vh;
-    text-align: center;
-    padding: 50px 10%;
-    margin-top: 10px;
-}
-
-.home .home_item {
-    display: block;
-    margin: 10px 0;
-}
-
-
-/* About Us */
-
-.about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #F4CCE2;
-    min-height: 60vh;
-    text-align: center;
-    padding: 50px 10%;
-    margin-top: 10px;
-}
-
-/* Commissions Page */
-
-.commissions {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #F4CCE2;
-    min-height: 60vh;
-    text-align: center;
-    padding: 50px 10%;
-    margin-top: 10px;
-}
-
-/* Gallery */
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #F4CCE2;
-    min-height: 60vh;
-    padding: 50px 10%;
-    margin-top: 10px;
-}
-
-/* Contact Us */
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #F4CCE2;
-    min-height: 60vh;
-    text-align: center;
-    padding: 50px 10%;
-    margin-top: 10px;
+/* Scrollbar Browswer Support */
+@supports (scrollbar-color: linear-gradient(135deg, #D63384, #B11162) hsl(193 8% 90%)) {
+    * {
+        scrollbar-color: linear-gradient(135deg, #D63384, #B11162) hsl(193 8% 90%);
+    }
 }
