@@ -10,8 +10,9 @@ html {
 }
 
 body {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     background-color: #F8E1F4;
-    margin-top: 80px;
 }
 
 h2, h4 {
