@@ -224,9 +224,77 @@ button:hover {
     background: #F4CCE2;
 }
 
-/* Scrollbar Browswer Support */
-@supports (scrollbar-color: linear-gradient(135deg, #D63384, #B11162) hsl(193 8% 90%)) {
-    * {
-        scrollbar-color: linear-gradient(135deg, #D63384, #B11162) hsl(193 8% 90%);
-    }
+/* Home Page */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4CCE2;
+    min-height: 60vh;
+    text-align: center;
+    padding: 50px 10%;
+    margin-top: 10px;
+}
+
+.home .home_item {
+    display: block;
+    margin: 10px 0;
+}
+
+
+/* About Us */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4CCE2;
+    min-height: 60vh;
+    text-align: center;
+    padding: 50px 10%;
+    margin-top: 10px;
+}
+
+/* Commissions Page */
+
+.commissions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4CCE2;
+    min-height: 60vh;
+    text-align: center;
+    padding: 50px 10%;
+    margin-top: 10px;
+}
+
+/* Gallery */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4CCE2;
+    min-height: 60vh;
+    padding: 50px 10%;
+    margin-top: 10px;
+}
+
+/* Contact Us */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4CCE2;
+    min-height: 60vh;
+    text-align: center;
+    padding: 50px 10%;
+    margin-top: 10px;
 }
