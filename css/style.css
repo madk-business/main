@@ -229,13 +229,6 @@ button:hover {
   background: #f4cce2;
 }
 
-/* Scrollbar Browser Support */
-@supports (scrollbar-width: none) {
-  * {
-    scrollbar-width: none;
-  }
-}
-
 /* Sections */
 
 .home,
