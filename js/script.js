@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const header = document.querySelector("header");
+  const header = document.querySelector("header");
 
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 50) {
-            header.classList.add("scrolled");
-        } else {
-            header.classList.remove("scrolled");
-        }
-    });
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
 });
 
 function toggleMenu() {
-    document.querySelector(".nav").classList.toggle("show");
+  document.querySelector(".nav").classList.toggle("show");
 }
